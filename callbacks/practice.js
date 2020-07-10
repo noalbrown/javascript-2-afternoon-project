@@ -92,11 +92,13 @@ multiply(4, 3, function (answer) {
 */
 
 //Code Here 
-function contains(array1, John, cb) {
-  if (array1 === John) {
-    return cb(true)
-  } else if (array1 != John) {
-    return cb(false)
+function contains(array, name, callback) {
+  for (i = 0; i < array.length; i++) {
+    if (array[i] === name) {
+      callback(true)
+    } else {
+      callback(false)
+    }
   }
 }
 // Do not edit the code below.
